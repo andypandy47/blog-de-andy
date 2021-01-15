@@ -1,0 +1,70 @@
+@import "./variables.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+
+  height: 100%;
+  width: 100%;
+
+  background: $background-gradient-dark;
+}
+
+.title-font {
+  font-family: 'Mitr', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+  color: $primary-text-colour;
+}
+
+ul {
+  list-style: circle;
+  margin: 1em 0;
+  padding-left: 40px;
+}
+
+.colour {
+  &-text {
+    &-primary {
+      color: $primary-text-colour;
+    }
+
+    &-secondary {
+      color: $secondary-text-colour
+    }
+  }
+
+  &-bg {
+    &-primary {
+      background-color: $primary-colour;
+    }
+  }
+
+  &-border {
+    &-primary {
+      border-color: $primary-colour;
+    }
+
+    &-secondary {
+      border-color: $secondary-text-colour
+    }
+  }
+}
+
+@import "./shared/layout.scss";
+@import "./post.scss";
