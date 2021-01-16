@@ -7,8 +7,8 @@ interface PostHeaderProps {
 
 const PostHeader: React.FC<PostHeaderProps> = ({title, date}) => {
     return (
-        <div className="text-left py-3 tracking-widest">
-            <h1 className="text-2xl font-bold px-4">{title}</h1>
+        <div className="text-left py-3 bg-raised-primary tracking-widest">
+            <h1 className="text-3xl font-bold px-4">{title}</h1>
             <h2 className="text-xs font-light text-text-secondary tracking-normal pl-4">{date}</h2>
         </div>
     );

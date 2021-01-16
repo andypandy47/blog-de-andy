@@ -15,6 +15,11 @@ body {
   background: $background-gradient-dark;
 }
 
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
 .title-font {
   font-family: 'Mitr', sans-serif;
 }

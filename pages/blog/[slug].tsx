@@ -7,7 +7,6 @@ import hydrate from "next-mdx-remote/hydrate";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, NextPage } from "next";
 
 import PostHeader from "../../components/posts/Post-Header";
-
 interface PostProps {
     source: any;
     frontMatter: IPostMetaData
@@ -18,9 +17,9 @@ const Post: NextPage<PostProps> = ({source, frontMatter}) => {
     return (
         <div>
             <Meta title={frontMatter.title}/>
-            <div className="h-screen w-screen bg-primary">
+            <div className="h-full w-full bg-primary">
                 <PostHeader title={frontMatter.title} date={frontMatter.date} />
-                <div className="px-4">{content}</div>
+                <div className="p-4 post-content">{content}</div>
             </div>
         </div>
     )

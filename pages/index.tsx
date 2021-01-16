@@ -15,7 +15,7 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({ posts }) => {
   
   return (
-    <div className="h-screen w-screen bg-primary">
+    <div className="h-full w-full bg-primary">
       <Meta title="blog-de-andy" />
       <MainTitle />
       <PostIndex posts={posts}/>

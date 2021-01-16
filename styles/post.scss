@@ -1,0 +1,49 @@
+.post-content {
+
+    h2 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin-bottom: 1em;
+        font-weight: 300;
+    }
+
+    ul {
+        margin: .8em 0;
+    }
+
+    li {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: $primary-colour;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+}
