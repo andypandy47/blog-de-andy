@@ -15,12 +15,10 @@ interface PostProps {
 const Post: NextPage<PostProps> = ({source, frontMatter}) => {
     const content = hydrate(source, { components });
     return (
-        <div>
+        <div className="h-full w-full bg-primary">
             <Meta title={frontMatter.title}/>
-            <div className="h-full w-full bg-primary">
-                <PostHeader title={frontMatter.title} date={frontMatter.date} />
-                <div className="p-4 post-content">{content}</div>
-            </div>
+            <PostHeader title={frontMatter.title} date={frontMatter.date} />
+            <div className="p-4 post-content">{content}</div>
         </div>
     )
 }
