@@ -3,12 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: "Roboto Flex", sans-serif;
+	src: url("./fonts/RobotoFlex[slnt\,wdth\,wght\,opsz].ttf") format("woff2 supports variations"),
+       url("./fonts/RobotoFlex[slnt\,wdth\,wght\,opsz].ttf") format("woff2-variations");
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-
+  
   height: 100%;
   width: 100%;
 
@@ -21,7 +28,7 @@ body {
 }
 
 .title-font {
-  font-family: 'Mitr', sans-serif;
+  font-family: "Mitr", sans-serif;
 }
 
 a {
