@@ -47,8 +47,6 @@ export const getSortedPostsMetaData = () => {
     }
   });
 
-  console.log(sortedPosts);
-
   return sortedPosts; 
 }
 

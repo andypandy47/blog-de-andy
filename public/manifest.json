@@ -2,5 +2,9 @@
   "manifest_version": 2,
   "version": "0.1",
   "name": "blog-de-andy",
+  "short_name": "blog-de-andy",
+  "start_url": "/",
+  "orientation": "portrait-primary",
+  "background_color": "#25252e",
   "display": "standalone"
 }

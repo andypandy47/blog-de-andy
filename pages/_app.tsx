@@ -12,12 +12,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             DEV_TOOLS[key] = typeof value === 'function' ? noop : null;
         }
       }
-      console.log("disabled dev tools");
     }
-  }
-    
-  if (process.env.NODE_ENV === "development") {
-      console.log("dev environment");
   }
 
   return <Component {...pageProps} />;

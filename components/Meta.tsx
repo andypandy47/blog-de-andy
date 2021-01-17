@@ -11,7 +11,7 @@ const Meta: React.FC<HeadProps> = ({ title, description }) => {
       <title>{title}</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes" />
       <meta name="description" content={description ?? "needs description"} />
-      <link rel="manifest" href="/static/manifest.json"></link>
+      <link rel="manifest" href="/manifest.json"></link>
     </Head>
   );
 };
