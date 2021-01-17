@@ -1,7 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import { VscGithub, VscTwitter } from "react-icons/vsc";
-import { FaYoutube } from "react-icons/fa";
 import { Pages } from "../utilities/constants";
 
 interface MobileNavProps {
@@ -10,7 +8,7 @@ interface MobileNavProps {
 
 const MobileNav: React.FC<MobileNavProps> = ({currentPage}) => {
     return (
-        <footer className="md:hidden">
+        <footer className="min-w-full md:hidden">
             <nav className="bg-raised-primary">
                 
                 <div className="flex justify-around items-center flex-1">
