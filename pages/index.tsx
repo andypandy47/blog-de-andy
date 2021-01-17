@@ -15,9 +15,9 @@ interface HomeProps {
 }
 
 const Home: NextPage<HomeProps> = ({ posts }) => {
-  
+
   return (
-    <div className="h-full w-full bg-primary flex flex-col items-center min-h-screen max-h-screen">
+    <div className="h-full w-full bg-primary flex flex-col items-center"> 
       <Meta title="blog-de-andy" />
       <MainTitle />
       <PostIndex posts={posts}/>
