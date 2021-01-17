@@ -4,6 +4,7 @@ export interface IPostMetaData {
     date: string;
     author: string;
     excerpt: string;
+    enabled: boolean;
 }
 
 export interface IPost {

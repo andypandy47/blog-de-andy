@@ -16,15 +16,14 @@ body {
   padding: 0;
   margin: 0;
   
-  height: 100%;
-  width: 100%;
-
+  min-height: 100vh;
+  width: 100vw;
   background: $background-gradient-dark;
 }
 
 #__next {
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .title-font {
@@ -48,34 +47,6 @@ ul {
   list-style: circle;
   margin: 1em 0;
   padding-left: 40px;
-}
-
-.colour {
-  &-text {
-    &-primary {
-      color: $primary-text-colour;
-    }
-
-    &-secondary {
-      color: $secondary-text-colour
-    }
-  }
-
-  &-bg {
-    &-primary {
-      background-color: $primary-colour;
-    }
-  }
-
-  &-border {
-    &-primary {
-      border-color: $primary-colour;
-    }
-
-    &-secondary {
-      border-color: $secondary-text-colour
-    }
-  }
 }
 
 @import "./shared/layout.scss";

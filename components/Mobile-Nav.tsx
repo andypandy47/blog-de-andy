@@ -5,47 +5,34 @@ import { FaYoutube } from "react-icons/fa";
 import { Pages } from "../utilities/constants";
 
 interface MobileNavProps {
-    currentPage: string;
+    currentPage?: string;
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({currentPage}) => {
     return (
-        <nav className="bg-raised-primary flex justify-between items-center">
-            <div className="flex justify-between items-center flex-1">
-                <Link href="/">
-                    <a className={`text-sm p-3 ${currentPage === Pages.Home && "text-secondary"}`}>
-                        POSTS
-                    </a>
-                </Link>
-                <Link href="/projects">
-                    <a className={`text-sm p-3 ${currentPage === Pages.Projects && "text-secondary"}`}>
-                        PROJECTS
-                    </a>
-                </Link>
-                <Link href="/about">
-                    <a className={`text-sm p-3 ${currentPage === Pages.About && "text-secondary"}`}>
-                        ABOUT
-                    </a>
-                </Link>
-            </div>
-            <div className="flex justify-end items-center">
-                <Link href="https://github.com/andypandy47">
-                    <a className="py-3 px-3">
-                        <VscGithub className="text-xl"/>
-                    </a>
-                </Link>
-                <Link href="https://twitter.com/AudioPandy">
-                    <a className="py-3 px-3">
-                        <VscTwitter className="text-xl"/>
-                    </a>
-                </Link>
-                <Link href="https://www.youtube.com/channel/UCEAI5uTSFNtCbXGlCKZgwuQ">
-                    <a className="py-3 px-3">
-                        <FaYoutube className="text-xl"/>
-                    </a>
-                </Link>
-            </div>
-        </nav>
+        <footer className="md:hidden">
+            <nav className="bg-raised-primary">
+                
+                <div className="flex justify-around items-center flex-1">
+                    <Link href="/">
+                        <a className={`text-sm text-center p-3 flex-1 ${currentPage === Pages.Home && "text-secondary bg-primary"}`}>
+                            POSTS
+                        </a>
+                    </Link>
+                    <Link href="/projects">
+                        <a className={`text-sm text-center p-3 flex-1 ${currentPage === Pages.Projects && "text-secondary bg-primary"}`}>
+                            PROJECTS
+                        </a>
+                    </Link>
+                    <Link href="/about">
+                        <a className={`text-sm text-center p-3 flex-1 ${currentPage === Pages.About && "text-secondary bg-primary"}`}>
+                            ABOUT
+                        </a>
+                    </Link>
+                </div>
+                
+            </nav>
+        </footer>
     );
 }
 

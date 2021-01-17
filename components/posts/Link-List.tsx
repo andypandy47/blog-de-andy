@@ -1,4 +1,4 @@
-import { IPostLink } from "../../utilities/post-meta-data";
+import { IPostLink } from "../../utilities/post-interfaces";
 
 interface LinkListProps {
     postLinks: IPostLink[];

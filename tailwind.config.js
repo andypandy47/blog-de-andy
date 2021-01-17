@@ -1,5 +1,5 @@
 const primary = "#25252e";
-const primaryAlt = "#363640";
+const primaryRaised = "#363640";
 const secondary = "#ff26e2";
 
 const primaryText = "#faf3f3";
@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     colors: {
       "primary": primary,
-      "raised-primary": primaryAlt,
+      "raised-primary": primaryRaised,
       "secondary": secondary,
       "text-primary": primaryText,
       "text-secondary": secondaryText
@@ -25,6 +25,9 @@ module.exports = {
       "sm": "24rem",
       "md": "28rem",
       "lg": "32rem"
+    },
+    maxWidth: {
+      "screen-full": "100vw"
     },
     extend: {},
   },
