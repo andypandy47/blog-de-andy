@@ -11,17 +11,17 @@ const MainTitle: React.FC = () => {
         <div className="flex justify-between">
           <h2 className="text-xs font-thin text-secondary flex flex-1 justify-start items-center md:p-0 md:text-sm">web + game dev</h2>
           <div className="w-2/4 flex justify-end items-center">
-              <Link href="">
+              <Link href="https://github.com/andypandy47">
                 <a className="text-base p-1 mr-2 md:text-lg">
                   <VscGithub />
                 </a>
               </Link>
-              <Link href="">
+              <Link href="https://twitter.com/AudioPandy">
                 <a className="text-base p-1 mr-2 md:text-lg">
                   <VscTwitter />
                 </a>
               </Link>
-              <Link href="">
+              <Link href="https://www.youtube.com/channel/UCEAI5uTSFNtCbXGlCKZgwuQ">
                 <a className="text-base p-1 mr-0 md:text-lg">
                   <FaYoutube />
                 </a>
